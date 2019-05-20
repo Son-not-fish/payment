@@ -33,7 +33,10 @@ class Index extends Home
         if ($lang) {
             Cookie::set('think_var', $lang);
         }
-        $lang = Cookie::get('think_var');
+        $lang = Cookie::get('think_var') ?? 'zh-cn';
+        if ($lang) {
+            Cookie::set('think_var', $lang);
+        }
         $this->assign('lang', $lang);
     }
 
