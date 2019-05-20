@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7 ]>  <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>  <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>  <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!-- Meta -->
+<html lang="en">
+<head>
+<!-- Page Title Here -->
+<title>{:config('web_site_title')}</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="{if cookie('think_var') == 'zh-cn'}{:config('web_site_keywords')}{else/}{:config('web_site_en_keywords')}{/if}" />
+<meta name="author" content="alogateway" />
+<meta name="robots" content="noodp" />
+<meta name="description" content="{:config('web_site_title')}" />
+<meta property="og:title" content="{:config('web_site_title')}" />
+<meta property="og:description" content="{:config('web_site_title')}" />
+<meta property="og:image" content="./images/logo/favicon.png" />
+<meta name="format-detection" content="telephone=no">
+<!-- Favicons Icon -->
+<link rel="icon" href="/static/images/logo/favicon.png" type="image/png" />
+<link rel="shortcut icon" type="image/png" href="/static/images/logo/favicon.png" />
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if lt IE 9]>
+        <script src="/static/js/html5shiv.min.js"></script>
+        <script src="/static/js/respond.min.js"></script>
+	<![endif]-->
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="/static/css/style.min.css">
+<link class="skin"  rel="stylesheet" type="text/css" href="/static/css/skin-alogateway.css">
+<link  rel="stylesheet" type="text/css" href="/static/css/templete.css">
+<!-- <link rel="stylesheet" type="text/css" href="/static/css/switcher.min.css"> -->
+
+<!-- Google fonts -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128916617-1');
+</script>
+
+</head>
+<body id="bg"><!-- <div id="loading-area"></div> --><style type="text/css">
+.has-error-custom
+{
+    color: #a94442;
+}
+</style>
+<div class="page-wraper">
+    <!-- header -->
+	<!-- header -->
+    {include file="index/header" /}
+
+
+    <!-- header END -->	<!-- header-end -->   <!-- Content -->
+    <div class="page-content">
+        <!-- inner page banner -->
+        <div class="dlab-bnr-inr overlay-black-middle" style="background-image:url(/static/images/merchant-app.jpg);">
+            <div class="container">
+                <div class="dlab-bnr-inr-entry">
+                    <h1 class="text-white">{:lang("MERCHANT SERVICES APPLICATION")}</h1>
+                    <p class="text-white"><strong>{:lang("Please note that all fields must be filled out to approve your application:")}</strong></p>
+                </div>
+            </div>
+        </div>
+        <!-- inner page banner END -->
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="index.html">{:lang("Home")}</a></li>
+                    <li>{:lang("MERCHANT SERVICES APPLICATION")}</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
+        <!-- contact area -->
+       <div class="section-full content-inner bg-white contact-style-1">
+            <!-- Career -->
+            <div class="container">
+                <div class="row">
+                    <!-- Left part start -->
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="p-a30 bg-gray clearfix m-b30 ">
+							<h2>{:lang('CORPORATE INFORMATION')}</h2>
+							<div class="dlab-separator-outer ">
+								<div class="dlab-separator bg-secondry style-skew"></div>
+							</div>
+							<div class="dzFormMsg"></div>
+							<form method="post" action="" id="MerAppCUP">
+                            <input type="hidden" value="Contact" name="dzToDo">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                 <input type="text" class="form-control"   name="trading_name" id="trading_name" placeholder="{:lang('Company DBA (Doing Business As) / Trading Name')}" required="required" data-error="Enter Company DBA (Doing Business As) / Trading Name">
+                                            </div>
+                                            
+                                         <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group"> 
+                                                 <input type="text" class="form-control"   name="company_name" id="company_name" placeholder="{:lang('Company Name')}" required="required" data-error="Enter Company Name">
+                                                 
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                 <input type="text" class="form-control"   name="bus_reg_number" id="bus_reg_number" placeholder="{:lang('Business Registration Number')}" required="required" data-error="Enter Business Registration Number">
+                                                 
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                 <input type="text" class="form-control"   name="country_incorp" id="country_incorp" placeholder="{:lang('Country of Incorporation')}" required="required" data-error="Enter Country of Incorporation">
+                                                
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                               <input type="text" class="form-control"   name="date_bus_est" id="date_bus_est" placeholder="{:lang('Date business established (MM/YY)')}" required="required" data-error="Enter Date business established (MM/YY)">
+                                               
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p><strong>{:lang('Business Mailing Address')}</strong></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control"   name="street"  id="street" placeholder="{:lang('Street')}" required="required" data-error="Enter Street">
+                                                
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control"   name="city" id="city" placeholder="{:lang('City')}" required="required" data-error="Enter City">
+                                                
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control"   name="state" id="state" placeholder="{:lang('State')}" required="required" data-error="Enter State">
+                                                
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control"   name="Country" id="Country" placeholder="{:lang('Country')}" required="required" data-error="Enter Country">
+                                                
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control"   name="zipcode" id="zipcode" placeholder="{:lang('ZIP Code')}" required="required" data-error="Enter ZIP Code">
+                                                
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>{:lang('Type of Business')}</p>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input checkBoxHeight" name="business_type[]" id="business_type1" value="独资经营">
+                                            <label class="custom-control-label" for="business_type1">{:lang('Sole proprietorship')}</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input checkBoxHeight" name="business_type[]" id="business_type2" value="伙伴关系">
+                                            <label class="custom-control-label" for="business_type2">{:lang('Partnership')}</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input checkBoxHeight" name="business_type[]" id="business_type3" value="公司">
+                                            <label class="custom-control-label" for="business_type3">{:lang('Corporation')}</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input checkBoxHeight" name="business_type[]" id="business_type4" value="其他">
+                                            <label class="custom-control-label" for="business_type4">{:lang('Other')}</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="help-block with-errors bustype"></div>
+                                <br/>
+                                <h2>{:lang('WEBSITE')}</h2>
+                                <div class="dlab-separator-outer">
+                                    <div class="dlab-separator bg-secondry style-skew"></div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                 <input type="text" class="form-control"   id="website" name="website" placeholder="{:lang('Website URL')}" required="required" data-error="Enter Website URL">
+                                                 
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group"> 
+                                                 <input type="text" class="form-control"   id="industry" name="industry" placeholder="{:lang('Industry')}" required="required" data-error="Enter Industry">
+                                                 
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>{:lang('PERSON OF CONTACT')}</h2>
+                                <div class="dlab-separator-outer">
+                                    <div class="dlab-separator bg-secondry style-skew"></div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                 <input type="text" class="form-control"   id="name" name="name" placeholder="{:lang('name')}" required="required" data-error="Enter Name">
+                                                 
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group"> 
+                                                 <input type="email" class="form-control"   id="email" name="email" placeholder="{:lang('E-Mail address')}" required="required" data-error="Enter E-Mail address">
+                                                
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group"> 
+                                                 <input type="text" class="form-control"   id="position" name="position" placeholder="{:lang('Position')}" required="required" data-error="Enter Position">
+                                                 
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>{:lang('BUSINESS INFORMATION')}</h2>
+                                <div class="dlab-separator-outer">
+                                    <div class="dlab-separator bg-secondry style-skew"></div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                 <input type="text" class="form-control"   id="tot_vol_RMB" name="tot_vol_RMB" placeholder="{:lang('Estimated total Volume per month RMB')}" required="required" data-error="Enter Estimated total Volume per month RMB">
+                                                 
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group"> 
+                                                 <input type="text" class="form-control"   id="tot_transaction_month" name="tot_transaction_month" placeholder="{:lang('Estimated total number of transactions per month')}" required="required" data-error="Estimated total number of transactions per month">
+                                                 
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group"> 
+                                                 <input type="text" class="form-control"   id="avg_tr" name="avg_tr" placeholder="{:lang('Average transaction size RMB')}" required="required" data-error="Enter Average transaction size RMB">
+                                                 
+                                            </div>
+                                           <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="input-group"> 
+                                                <input type="text" class="form-control"   id="hst_tr" name="hst_tr" placeholder="{:lang('Highest transaction size RMB')}" required="required" data-error="Enter Highest transaction size RMB">
+                                               
+                                            </div>
+                                            <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <div class="input-group"> 
+                                                <input type="text" class="form-control"   id="method_cur" name="method_cur" placeholder="{:lang('Required Payment Method and Currency')}" required="required" data-error="Enter Required Payment Method and Currency">
+                                              
+                                            </div>
+                                             <small class="help-block with-errors"></small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row ">
+                                        <div class="col-md-12">
+                                            <p><strong>{:lang('Preferred settlement currency:')}</strong></p>
+                                        </div>
+                                        
+                                        <div class="col-md-1">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input checkBoxHeight" name="settlement_cur[]" value="人民币" id="RMB">
+                                                <label class="custom-control-label" for="RMB">{:lang('RMB')}</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input checkBoxHeight" name="settlement_cur[]" value="欧元" id="EUR">
+                                                <label class="custom-control-label" for="EUR">{:lang('EUR')}</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input checkBoxHeight" name="settlement_cur[]" value="美元" id="USD">
+                                                <label class="custom-control-label" for="USD">{:lang('USD')}</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input checkBoxHeight" name="settlement_cur[]" value="港币" id="HKD">
+                                                <label class="custom-control-label" for="HKD">{:lang('HKD')}</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input checkBoxHeight"  name="settlement_cur[]" value="马币" id="MYR">
+                                                <label class="custom-control-label" for="MYR">{:lang('MYR')}</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input checkBoxHeight" name="settlement_cur[]" value="越南盾" id="VND">
+                                                <label class="custom-control-label" for="VND">{:lang('VND')}</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input checkBoxHeight" name="settlement_cur[]" value="泰铢" id="THB">
+                                                <label class="custom-control-label" for="THB">{:lang('THB')}</label>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="help-block with-errors curype"></div>
+                                <br/>
+                                <h2>{:lang('INTEGRATION')}</h2>
+                                <div class="dlab-separator-outer">
+                                    <div class="dlab-separator bg-secondry style-skew"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="col-md-12">
+                                            <p><strong>{:lang('Do you need assistance with the API Integration from our IT department?')}</strong></p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-control custom-checkbox">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="q2" name="q2" class="custom-control-input checkBoxHeight" value="是" >
+                                                    <label class="custom-control-label" for="q2">{:lang('YES')}</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-control custom-checkbox">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="q201" name="q2" class="custom-control-input checkBoxHeight" value="否" checked="checked">
+                                                    <label class="custom-control-label" for="q201">{:lang('No')}</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-12">
+                                            <p><strong>{:lang('Are you offering memberships on your website?')}</strong></p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-control custom-checkbox">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="q3" name="q3" class="custom-control-input checkBoxHeight" value="是" >
+                                                    <label class="custom-control-label" for="q3">{:lang('YES')}</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-control custom-checkbox">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="q301" name="q3" class="custom-control-input checkBoxHeight" value="否" checked="checked">
+                                                    <label class="custom-control-label" for="q301">{:lang('No')}</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>{:lang('REFERRED BY')}</h2>
+                                <div class="dlab-separator-outer">
+                                    <div class="dlab-separator bg-secondry style-skew"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                               <input type="text" class="form-control" id="referred_by" name="referred_by" placeholder="{:lang('Specify')}" required="required" data-error="Enter Specify">
+                                           </div>
+                                           <small class="help-block with-errors"></small>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div class="row">
+                                <div class="col-md-12">
+                                    <div><img src="{:url('index/verify')}" alt="captcha" onClick="this.src=this.src+'?'+Math.random()"/></div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="captcha" id="captcha" placeholder="{:lang('Enter captcha')}" required="required" data-error="Enter captcha">
+                                        </div>
+                                        <small class="help-block with-errors"></small>
+                                    </div>
+                                </div>
+                            </div>  
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button name="submit" type="submit" value="Submit" id="applynowbtn" class="site-button" > <span>{:lang('APPLY NOW')}</span> </button>
+                                    </div>
+                                </div>
+                            </form>
+							<div class="dzFormMsg"></div>
+                        </div>
+                    </div>
+                    <!-- Left part END -->
+                </div>
+            </div>
+            <!-- Career END -->
+        </div>
+        <!-- contact area  END -->
+    </div>
+    <!-- Content END-->
+    <!-- Footer -->
+	<!-- Footer -->
+	<footer class="site-footer">
+        <!-- footer bottom part -->
+        <div class="footer-bottom footer-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-left"> <span>Copyright © 2018 Alo Gateway</span> </div>
+					<div class="col-md-4 text-center"> <!-- <span> Design With <i class="fa fa-heart text-primary heart"></i> By FGTI </span> --> </div>
+					<div class="col-md-4 text-right ">
+                    <a href="about.html"> {:lang('ABOUT US')}</a>
+                    <!-- <a href="faq-1.php"> FAQs</a> -->
+                    <a href="contact.html"> {:lang('CONTACT US')}</a> </div>
+                </div>
+            </div>
+        </div>
+    </footer>    <!-- Footer END-->
+    <!-- scroll top button -->
+    <!-- <button class="scroltop fa fa-arrow-up style5" ></button> -->
+</div>
+
+<!-- JavaScript  files ========================================= -->
+<script src="/static/js/combine.js"></script>
+<script>
+
+
+    $(function() {
+
+        var msgDiv;
+
+        $("#MerAppCUP").on("submit", function(e)
+        {
+            console.log('123');
+            if (!e.isDefaultPrevented()) {
+                $('.dzFormMsg').html('<div class="gen alert alert-success">{:lang("Submitting..")}</div>');
+                var dzFormData = $(this).serialize();
+                $.ajax({
+                    method: "POST",
+                    url: '',
+                    data: dzFormData,
+                    dataType: 'json',
+                    success: function(dzRes){
+                        if(dzRes.status == 1){
+                            msgDiv = '<div class="gen alert alert-success">'+dzRes.msg+'</div>';
+                        }
+
+                        if(dzRes.status == 0){
+                            msgDiv = '<div class="err alert alert-danger">'+dzRes.msg+'</div>';
+                        }
+                        $('.dzFormMsg').html(msgDiv);
+                        $('.dzForm')[0].reset();
+                        if (dzRes.status == 1) {
+                            setTimeout(function () {
+                                window.location.reload();
+                            }, 3000);
+                        }
+                    }
+                })
+                return false;
+            }
+
+        });
+        setInterval(function(){
+            $('.dzFormMsg .alert').hide(1000);
+        }, 10000);
+    });
+</script>
+
+</body>
+</html>
